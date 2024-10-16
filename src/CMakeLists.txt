@@ -13,7 +13,7 @@ add_library(loki::parsers ALIAS parsers)
 # Use include depending on building or using from installed location
 target_include_directories(parsers
     PUBLIC
-        "$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>"
+        "$<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>"
         "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>"
 )
 
